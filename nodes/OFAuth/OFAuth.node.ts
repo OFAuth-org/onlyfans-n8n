@@ -41,44 +41,32 @@ export class OFAuth implements INodeType {
         noDataExpression: true,
         options: [
                   {
-                            "name": "Whoami",
-                            "value": "whoami"
-                  },
-                  {
-                            "name": "Connections",
-                            "value": "connections"
-                  },
-                  {
-                            "name": "Settings",
-                            "value": "settings"
-                  },
-                  {
-                            "name": "Self",
-                            "value": "self"
-                  },
-                  {
-                            "name": "Earnings",
-                            "value": "earnings"
-                  },
-                  {
                             "name": "Analytics",
                             "value": "analytics"
-                  },
-                  {
-                            "name": "Posts",
-                            "value": "posts"
-                  },
-                  {
-                            "name": "Users",
-                            "value": "users"
                   },
                   {
                             "name": "Chats",
                             "value": "chats"
                   },
                   {
+                            "name": "Earnings",
+                            "value": "earnings"
+                  },
+                  {
                             "name": "Mass Messages",
                             "value": "mass_messages"
+                  },
+                  {
+                            "name": "Posts",
+                            "value": "posts"
+                  },
+                  {
+                            "name": "Promotions",
+                            "value": "promotions"
+                  },
+                  {
+                            "name": "Self",
+                            "value": "self"
                   },
                   {
                             "name": "Subscribers",
@@ -89,15 +77,27 @@ export class OFAuth implements INodeType {
                             "value": "subscriptions"
                   },
                   {
-                            "name": "Promotions",
-                            "value": "promotions"
+                            "name": "Users",
+                            "value": "users"
                   },
                   {
                             "name": "Vault",
                             "value": "vault"
+                  },
+                  {
+                            "name": "Connections",
+                            "value": "connections"
+                  },
+                  {
+                            "name": "Settings",
+                            "value": "settings"
+                  },
+                  {
+                            "name": "Whoami",
+                            "value": "whoami"
                   }
         ],
-        default: 'whoami',
+        default: 'analytics',
       },
       {
         displayName: 'Operation',
@@ -106,7 +106,7 @@ export class OFAuth implements INodeType {
         noDataExpression: true,
         displayOptions: {
           show: {
-            resource: ["whoami","connections","settings","self","earnings","analytics","posts","users","chats","mass_messages","subscribers","subscriptions","promotions","vault"],
+            resource: ["analytics","chats","earnings","mass_messages","posts","promotions","self","subscribers","subscriptions","users","vault","connections","settings","whoami"],
           },
         },
         options: [
