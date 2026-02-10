@@ -1,13 +1,10 @@
 {
   "name": "n8n-nodes-ofauth",
-  "version": "2.0.0",
+  "version": "2.3.0",
   "description": "n8n community node for OFAuth API",
   "keywords": [
     "n8n-community-node-package",
-    "ofauth",
-    "onlyfans",
-    "sdk",
-    "api"
+    "ofauth"
   ],
   "main": "index.js",
   "files": [
