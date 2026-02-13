@@ -41,48 +41,8 @@ export class OFAuth implements INodeType {
         noDataExpression: true,
         options: [
                   {
-                            "name": "Analytics",
-                            "value": "analytics"
-                  },
-                  {
-                            "name": "Chats",
-                            "value": "chats"
-                  },
-                  {
-                            "name": "Earnings",
-                            "value": "earnings"
-                  },
-                  {
-                            "name": "Mass Messages",
-                            "value": "mass_messages"
-                  },
-                  {
-                            "name": "Posts",
-                            "value": "posts"
-                  },
-                  {
-                            "name": "Promotions",
-                            "value": "promotions"
-                  },
-                  {
-                            "name": "Self",
-                            "value": "self"
-                  },
-                  {
-                            "name": "Subscribers",
-                            "value": "subscribers"
-                  },
-                  {
-                            "name": "Subscriptions",
-                            "value": "subscriptions"
-                  },
-                  {
-                            "name": "Users",
-                            "value": "users"
-                  },
-                  {
-                            "name": "Vault",
-                            "value": "vault"
+                            "name": "Whoami",
+                            "value": "whoami"
                   },
                   {
                             "name": "Connections",
@@ -93,11 +53,51 @@ export class OFAuth implements INodeType {
                             "value": "settings"
                   },
                   {
-                            "name": "Whoami",
-                            "value": "whoami"
+                            "name": "Self",
+                            "value": "self"
+                  },
+                  {
+                            "name": "Earnings",
+                            "value": "earnings"
+                  },
+                  {
+                            "name": "Analytics",
+                            "value": "analytics"
+                  },
+                  {
+                            "name": "Posts",
+                            "value": "posts"
+                  },
+                  {
+                            "name": "Users",
+                            "value": "users"
+                  },
+                  {
+                            "name": "Chats",
+                            "value": "chats"
+                  },
+                  {
+                            "name": "Mass Messages",
+                            "value": "mass_messages"
+                  },
+                  {
+                            "name": "Subscribers",
+                            "value": "subscribers"
+                  },
+                  {
+                            "name": "Subscriptions",
+                            "value": "subscriptions"
+                  },
+                  {
+                            "name": "Promotions",
+                            "value": "promotions"
+                  },
+                  {
+                            "name": "Vault",
+                            "value": "vault"
                   }
         ],
-        default: 'analytics',
+        default: 'whoami',
       },
       {
         displayName: 'Operation',
@@ -106,7 +106,7 @@ export class OFAuth implements INodeType {
         noDataExpression: true,
         displayOptions: {
           show: {
-            resource: ["analytics","chats","earnings","mass_messages","posts","promotions","self","subscribers","subscriptions","users","vault","connections","settings","whoami"],
+            resource: ["whoami","connections","settings","self","earnings","analytics","posts","users","chats","mass_messages","subscribers","subscriptions","promotions","vault"],
           },
         },
         options: [
